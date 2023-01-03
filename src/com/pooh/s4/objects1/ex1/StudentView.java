@@ -7,7 +7,7 @@ public class StudentView {
 	
 	//viewList 메서드 만들기
 	//n명의 학생들을 받아서 학생의 모든 정보를 출력하기 -> 여러명이므로 하나의 변수에 여러데이터 넣기(배열)
-	public void viewList(Student [] students) {
+	public void view(Student [] students) {
 		
 		for(int i=0; i<students.length; i++) {
 			System.out.println("Name : "+students[i].name);
@@ -24,7 +24,7 @@ public class StudentView {
 	//메서드 명은 viewOne
 	//학생 한명의 정보를 받아서 학생의 모든 정보를 출력하는 메서드.
 	//학생 한명을 호출 > viewOne에 데이터를 줌 > viewOne에서 학생의 데이터를 출력
-	public void viewOne(Student student) { //이 메서드가 하는 일이 학생의 정보들을 출력.
+	public void view(Student student) { //이 메서드가 하는 일이 학생의 정보들을 출력.
 		
 		System.out.println("Name : "+student.name);
 		System.out.println("번호 : "+student.num);

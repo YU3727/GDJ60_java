@@ -50,7 +50,7 @@ public class MenuController {
 				//2번 누르면 StudentInput에 있는 findStudent를 호출.
 				//findStudent를 통해 입력된 값을 viewOne을 통해 학생 한명을 출력해줌
 				student = si.findStudent(students);
-				sv.viewOne(student);
+				sv.view(student);
 				break;
 				
 				//강사님 방법
@@ -61,7 +61,7 @@ public class MenuController {
 			case 3:
 				System.out.println("모든 학생의 정보를 출력합니다");
 				//3번 누르면 StudentInput을 통해 저장한 정보를 StudentView를 통해 출력한다.
-				sv.viewList(students); //어떤 정보를 찍어야 하는지 최소한의 정보를 보내주는게 ()안의 역할
+				sv.view(students); //어떤 정보를 찍어야 하는지 최소한의 정보를 보내주는게 ()안의 역할
 				break;
 			case 4:
 				System.out.println("학생 한명을 추가합니다");
