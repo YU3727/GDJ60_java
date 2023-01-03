@@ -7,7 +7,7 @@ public class Main {
 	public static void main(String[] args) {
 		//메인 메서드 - 프로그램의 시작점 역할 또는 테스트 하는 역할 
 		//기능분리를 해야한다. - 메인메서드는 실행하기만
-		
+		System.out.println("Start");
 		MenuController menuController = new MenuController(); //메뉴컨트롤러라는 메서드를 실행하기 위해 해당 메서드의 객체를 만들어 준다.
 		
 		
