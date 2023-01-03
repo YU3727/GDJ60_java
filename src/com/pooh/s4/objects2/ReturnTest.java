@@ -3,7 +3,7 @@ package com.pooh.s4.objects2;
 import java.util.Random;
 
 public class ReturnTest {
-//230103. 2교시
+//230103 2교시
 	//만든 결과물을 되돌려 주는것이 return, 전달 받든 안받든 상관없다.
 	public void t1() { //2-1.return 값이 없다
 		System.out.println("return이 없을 때는 void");

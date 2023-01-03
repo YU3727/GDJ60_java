@@ -1,7 +1,7 @@
 package com.pooh.s4.objects2;
 
 public class Main {
-//230103. 2교시
+//230103 2교시
 	public static void main(String[] args) {
 		//2-1.Main에서 ReturnTest의 t1, t2를 호출해보자
 		ReturnTest returnTest = new ReturnTest();

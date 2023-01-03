@@ -1,7 +1,7 @@
 package com.pooh.s4.objects2;
 
 public class MonsterMain {
-//230103. 6교시, 7교시
+//230103 6교시, 7교시
 	public static void main(String[] args) {
 		//몬스터 만들기
 		Monster mon1 = new Monster(); //몬스터1

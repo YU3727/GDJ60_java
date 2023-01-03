@@ -1,7 +1,7 @@
 package com.pooh.s4.objects2;
 
 public class OverTestMain {
-//230103. 7교시
+//230103 7교시
 	public static void main(String[] args) {
 		
 		//Method OverLoading

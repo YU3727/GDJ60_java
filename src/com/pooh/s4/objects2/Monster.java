@@ -1,7 +1,7 @@
 package com.pooh.s4.objects2;
 
 public class Monster {
-//230103. 6교시, 7교시
+//230103 6교시, 7교시
 	//멤버변수(instance변수)는 클래스의 표면을 보여주는 것들
 	int power = 100;
 	int hp; //이 hp는 멤버변수(heap영역에 생성)
