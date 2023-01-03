@@ -1,7 +1,5 @@
 package com.pooh.s4.objects2;
 
-import java.util.Scanner;
-
 public class CarMain {
 //230103 8교시
 	public static void main(String[] args) {

@@ -20,10 +20,10 @@ public class MenuController {
 		System.out.println("학생 수를 입력하세요");
 		int count = sc.nextInt(); //학생수 입력받기
 		
-		//setAllStudent를 사용하기 위해 StudentInput클래스의 객체를 생성
+		//setAllStudent를 사용하기 위해 StudentInput클래스의 객체 si를 생성
 		StudentInput si = new StudentInput(); //while문 안에 만들면 객체를 계속만드니까 바깥으로 빼준다.
 		
-		//viewList를 사용하기 위해 StudentView클래스의 객체를 생성
+		//viewList를 사용하기 위해 StudentView클래스의 객체 sv를 생성
 		StudentView sv = new StudentView();
 		
 		//학생 수만큼 미리 학생을 입력받을 수 있는 배열을 준비함
@@ -40,15 +40,15 @@ public class MenuController {
 				break;
 			case 1:
 				System.out.println("학생 정보를 등록합니다"); 
-				//1번 누르면 StudentInput에 있는 setAllStudent가 호출되면 된다.
+				//1번 누르면 si객체로 setAllStudent메서드가 호출되면 된다.
 				si.setAllStudent(students);
 				break;
 			case 2:
 				System.out.println("일치하는 학생의 정보를 출력합니다");
 				//학생 한명의 정보를 받을 수 있는 student타입의 변수 student를 준비함.
 				Student student = new Student();
-				//2번 누르면 StudentInput에 있는 findStudent를 호출.
-				//findStudent를 통해 입력된 값을 viewOne을 통해 학생 한명을 출력해줌
+				//2번 누르면 si객체로 findStudent메서드를 호출.
+				//findStudent를 통해 입력된 값을 sv객체로 view메서드를 호출(학생 한명을 출력)
 				student = si.findStudent(students);
 				sv.view(student);
 				break;
@@ -60,12 +60,12 @@ public class MenuController {
 //				}
 			case 3:
 				System.out.println("모든 학생의 정보를 출력합니다");
-				//3번 누르면 StudentInput을 통해 저장한 정보를 StudentView를 통해 출력한다.
+				//3번 누르면 sv객체로 StudentView메서드를 호출(저장된 모드 정보를 출력하는 기능)
 				sv.view(students); //어떤 정보를 찍어야 하는지 최소한의 정보를 보내주는게 ()안의 역할
 				break;
 			case 4:
 				System.out.println("학생 한명을 추가합니다");
-				//4번을 누르면 StudnetInput을 통해 저장된 정보에 setStudent로 데이터 하나 추가.
+				//4번을 누르면 si객체로 setStudent메서드를 호출(배열값 하나를 추가하는 기능)
 				students = si.setStudent(students); //기존의 배열을 setStudent 메서드에 보내주고 
 				break;                              //받아온 리턴값을 students에 덮어씌운다.
 			case 5:
