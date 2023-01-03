@@ -15,8 +15,7 @@ public class Main {
 		menuController.start(); //멤버를 사용하기 위하여 참조변수명.메서드명() 으로 호출
 		
 		
-		
-			
+		System.out.println("finish");
 			
 //		//StudentInput의 setStudent 작동(미완)
 //		int count = 0;
