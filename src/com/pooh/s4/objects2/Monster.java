@@ -1,13 +1,21 @@
 package com.pooh.s4.objects2;
 
 public class Monster {
-//230103. 6교시
+//230103. 6교시, 7교시
 	//멤버변수(instance변수)는 클래스의 표면을 보여주는 것들
+	int power = 100;
 	int hp; //이 hp는 멤버변수(heap영역에 생성)
-	int power;
+	
+	//생성자 Constructor
+	public Monster() { //객체를 만들 때 딱 한번 호출된다.
+		//매개변수가 없는 생성자 : 기본 생성자(Default Constructor)
+		this.power = 50;
+		this.hp = 60;
+		System.out.println("생성자 실행");
+	}
+	
 	
 	//멤버메서드(instance메서드)는 몬스터의 act를 나타낸다.
-	
 	public boolean checkValue(Monster monster) { //매개변수에는 비교하고싶은 대상을 대입
 		//몬스터끼리 비교해서 몬스터의 스펙(hp, power)이 같으면 true값, 하나라도 다르면 false값 return 하는 메서드 만들기
 		boolean check = false;

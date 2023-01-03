@@ -10,14 +10,17 @@ public class StudentView {
 	public void view(Student [] students) {
 		
 		for(int i=0; i<students.length; i++) {
-			System.out.println("Name : "+students[i].name);
-			System.out.println("번호 : "+students[i].num);
-			System.out.println("국어점수 : "+students[i].kscore);
-			System.out.println("영어점수 : "+students[i].escore);
-			System.out.println("수학점수 : "+students[i].mscore);
-			System.out.println("총점 : "+students[i].total);
-			System.out.println("평균 : "+students[i].avg);
-			System.out.println("=======================");
+			Student student = students[i];
+			this.view(student); //자기자신의 메서드 view에 student인자를 넣음.
+			
+//			System.out.println("Name : "+students[i].name);
+//			System.out.println("번호 : "+students[i].num);
+//			System.out.println("국어점수 : "+students[i].kscore);
+//			System.out.println("영어점수 : "+students[i].escore);
+//			System.out.println("수학점수 : "+students[i].mscore);
+//			System.out.println("총점 : "+students[i].total);
+//			System.out.println("평균 : "+students[i].avg);
+//			System.out.println("=======================");
 		}	
 	}
 	
