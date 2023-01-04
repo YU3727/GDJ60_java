@@ -1,7 +1,7 @@
 package com.pooh.s4.objects5.characters;
 
 public abstract class Magition extends Character {
-//230104 5교시 상속과 다형성
+//230104 5교시 상속과
 //	private String name;
 //	private int hp;
 	private int mp;

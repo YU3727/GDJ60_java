@@ -1,7 +1,7 @@
 package com.pooh.s4.objects5.characters;
 
 public class Main {
-//230104 5교시 상속과 다형성
+//230104 5교시 상속과 8교시 다형성
 	public static void main(String[] args) {
 		
 //		//5교시 상속
