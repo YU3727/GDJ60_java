@@ -10,10 +10,10 @@ public class God {
 	
 	//객체를 만들어서 주는 메서드
 	//static을 붙이면 클래스메서드가 되어 객체 생성을 하지않고 메서드를 사용가능해진다.
-	public static God getInstance(God god) {
+	public static God getInstance() {
 		//객체를 하나만 만들고 싶을 때
 		if(god == null) {
-			God god = new God();
+			God.god = new God();
 		}
 		return God.god;
 		

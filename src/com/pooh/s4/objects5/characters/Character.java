@@ -1,6 +1,6 @@
 package com.pooh.s4.objects5.characters;
 
-public class Character {
+public abstract class Character { //미완성 클래스 이므로, 상속해서 내용을 완성해라
 //230104 5교시 상속 부모클래스 6교시 오버라이딩
 	
 	//archer과 magition의 공통적인 부분인 name과 hp를 부모클래스에 만든다
@@ -18,10 +18,9 @@ public class Character {
 	}
 	
 	//6교시 오버라이딩
-	public void attack() {
-		System.out.println("공격 메서드");
-	}
-	
+//	public void attack() {};
+//	public abstract void attack(); // 미완성된 메서드를 포함하면 클래스에도 abstract을 넣어준다.
+
 	
 	public int getLevel() {
 		return level;

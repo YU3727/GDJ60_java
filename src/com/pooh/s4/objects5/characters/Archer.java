@@ -1,6 +1,6 @@
 package com.pooh.s4.objects5.characters;
 
-public class Archer extends Character {
+public class Archer extends Character implements AttackAble {
 //230104 5교시 상속과 다형성
 
 	private int dex;
