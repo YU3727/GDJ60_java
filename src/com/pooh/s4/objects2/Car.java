@@ -2,20 +2,28 @@ package com.pooh.s4.objects2;
 
 public class Car {
 //230103 8교시, 생성자, 메서드 오버로딩
+//230104 3교시 그외지정자 static
 	
 	//자동차의 설계도
-	String company;
+	String company = "BMW"; //1번째 실행
 	String name;
 	int price;
 	String color;
 	
+	//초기화 블럭
+	{
+		System.out.println("초기화 블럭 : "+this.company); //2번째 실행
+		this.company = "AUDI";
+	}
+	
 	//default Constructor
 	public Car() { //객체가 만들어질때 기본적으로 아래값이 들어간다.
-		this("Black"); //생성자 내에서 다른 생성자를 호출.
-//		this.company = "KIA";
-//		this.name = "스포티지";
-//		this.price = 3500;
-//		this.color = "Black";
+//		this("Black"); //생성자 내에서 다른 생성자를 호출.
+		System.out.println("생성자 : "+this.company); //3번째 실행
+		this.company = "KIA";
+		this.name = "스포티지";
+		this.price = 3500;
+		this.color = "Black";
 	}
 	
 	//메서드 오버로딩 - color 세팅
