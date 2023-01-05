@@ -18,8 +18,6 @@ public class Main {
 		System.out.println("ArmRight : "+robot.getArmRight());
 		
 		
-		
-		
 		//객체를 지움 > 참조변수를 끊는다.
 		robot = null; //robot에는 heap영역에 만들어둔 로봇의 데이터를 담은 주소값을 없앰.
 		
@@ -31,9 +29,9 @@ public class Main {
 		//armRight는 참조변수가 끊어지면 지워지므로, robot과 armRight는 생명주기가 같음 = 강한연결
 		//armLeft는 연결은 되어있지만, robot과 armLeft는 생명주기가 다름 = 약한연결
 		
-		
-		
-		
+		System.out.println("AddRobot에서 작업");
+		robot = new Robot();
+		System.out.println(robot);
 		
 		System.out.println("프로그램 종료");
 	}
