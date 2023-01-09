@@ -52,12 +52,6 @@ public class MenuController {
 				student = si.findStudent(students);
 				sv.view(student);
 				break;
-				
-				//강사님 방법
-//				Student student = si.findStudent(students);
-//				if(student != null) {
-//					sv.viewOne(student);
-//				}
 			case 3:
 				System.out.println("모든 학생의 정보를 출력합니다");
 				//3번 누르면 sv객체로 StudentView메서드를 호출(저장된 모드 정보를 출력하는 기능)
